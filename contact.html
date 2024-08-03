@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to right, #4e54c8, #8f94fb, #a5a6f6);
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
         }
         .transition {
             transition: all 0.3s ease-in-out;
@@ -26,7 +26,7 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-blue-800 text-white p-4">
+    <header class="bg-blue-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Devlotia</h1>
             <nav class="space-x-4">
@@ -55,24 +55,17 @@
                     <label for="message" class="block text-gray-700">Message</label>
                     <textarea id="message" class="w-full p-2 border border-gray-300 rounded mt-2"></textarea>
                 </div>
-                <button type="submit" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+                <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
             </form>
         </section>
     </main>
-    <footer class="bg-blue-800 text-white p-4 text-center">
+    <footer class="bg-blue-900 text-white p-4 text-center mt-4">
         <p>&copy; 2024 Devlotia. All rights reserved.</p>
     </footer>
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault();
             alert('Message sent successfully!');
-        });
-
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.querySelectorAll('nav a').forEach(link => link.classList.remove('text-blue-300'));
-                this.classList.add('text-blue-300');
-            });
         });
     </script>
 </body>
