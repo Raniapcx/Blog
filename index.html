@@ -8,6 +8,9 @@
     <style>
         body {
             background: linear-gradient(to right, #4e54c8, #8f94fb);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .transition {
             transition: all 0.3s ease-in-out;
@@ -23,6 +26,9 @@
                 transform: translateY(0);
             }
         }
+        .content {
+            flex: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -36,7 +42,7 @@
             </nav>
         </div>
     </header>
-    <main class="container mx-auto p-4">
+    <main class="container mx-auto p-4 content">
         <section class="text-center my-8 fade-in">
             <h2 class="text-4xl font-bold text-gray-800">Welcome to Devlotia</h2>
             <p class="text-gray-600 mt-4">Discover a world of knowledge in programming, e-commerce, marketing, social media, freelancing, video editing, and graphic design.</p>
@@ -44,7 +50,7 @@
             <a href="blog.html" class="text-blue-900 hover:underline mt-4 block text-2xl">Read Our Articles</a>
         </section>
     </main>
-    <footer class="bg-blue-900 text-white p-4 text-center mt-4">
+    <footer class="bg-blue-900 text-white p-4 text-center">
         <p>&copy; 2024 Devlotia. All rights reserved.</p>
     </footer>
 </body>
