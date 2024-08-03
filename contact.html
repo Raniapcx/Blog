@@ -43,5 +43,18 @@
     <footer class="bg-blue-800 text-white p-4 text-center">
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
+    <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Message sent successfully!');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('nav a').forEach(link => link.classList.remove('text-blue-300'));
+            this.classList.add('text-blue-300');
+        });
+    });
+    </script>
 </body>
 </html>
