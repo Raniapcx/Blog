@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to right, #4e54c8, #8f94fb, #a5a6f6);
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
         }
         .transition {
             transition: all 0.3s ease-in-out;
@@ -23,10 +23,20 @@
                 transform: translateY(0);
             }
         }
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+        .scroll-item {
+            min-width: 250px;
+            flex: 0 0 auto;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-blue-800 text-white p-4">
+    <header class="bg-blue-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Devlotia</h1>
             <nav class="space-x-4">
@@ -42,33 +52,33 @@
             <p class="text-gray-600 mt-4">Explore articles from various categories.</p>
         </section>
         <section class="flex justify-center space-x-4 mb-4 fade-in">
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Programming</a>
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">E-commerce</a>
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Marketing</a>
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Social Media</a>
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Freelancing</a>
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Video Editing</a>
-            <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Graphic Design</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Programming</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">E-commerce</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Marketing</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Social Media</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Freelancing</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Video Editing</a>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Graphic Design</a>
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 fade-in">
-            <div class="bg-white p-4 rounded shadow transition hover:shadow-lg">
+        <section class="scroll-container fade-in">
+            <div class="scroll-item bg-white p-4 rounded shadow transition hover:shadow-lg">
                 <h3 class="text-2xl font-bold">Post Title 1</h3>
                 <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-blue-800 hover:underline mt-4 block">Read More</a>
+                <a href="#" class="text-blue-900 hover:underline mt-4 block">Read More</a>
             </div>
-            <div class="bg-white p-4 rounded shadow transition hover:shadow-lg">
+            <div class="scroll-item bg-white p-4 rounded shadow transition hover:shadow-lg">
                 <h3 class="text-2xl font-bold">Post Title 2</h3>
                 <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-blue-800 hover:underline mt-4 block">Read More</a>
+                <a href="#" class="text-blue-900 hover:underline mt-4 block">Read More</a>
             </div>
-            <div class="bg-white p-4 rounded shadow transition hover:shadow-lg">
+            <div class="scroll-item bg-white p-4 rounded shadow transition hover:shadow-lg">
                 <h3 class="text-2xl font-bold">Post Title 3</h3>
                 <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-blue-800 hover:underline mt-4 block">Read More</a>
+                <a href="#" class="text-blue-900 hover:underline mt-4 block">Read More</a>
             </div>
         </section>
     </main>
-    <footer class="bg-blue-800 text-white p-4 text-center">
+    <footer class="bg-blue-900 text-white p-4 text-center mt-4">
         <p>&copy; 2024 Devlotia. All rights reserved.</p>
     </footer>
 </body>
